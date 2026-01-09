@@ -134,19 +134,15 @@ cursor: pointer;
 
 /* Tablets */
 @media (max-width: 1024px) {
-  html {
-    font-size: 15px;
+  .form{
+  height:40vmax;
   }
 }
 
 /* Phones */
 @media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-
-  .header {
-    text-align: center;
+  .form{
+  height:45vmax;
   }
 }
 
