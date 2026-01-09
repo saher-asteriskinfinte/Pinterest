@@ -1,0 +1,133 @@
+@font-face{
+  font-family:Regular;
+  src:url("./Pin-Sans-MacOS-Regular-708c49dd.woff2");
+}
+@font-face{
+  font-family: Medium;
+  src:url("./Pin-Sans-MacOS-Medium-704a4f34.woff2");
+}
+@font-face{
+  font-family:Bold;
+  src:url("./Pin-Sans-MacOS-Bold-ce475d98.woff2");
+}
+@font-face{
+  font-family:Heavy;
+  src:url("./Pin-Sans-Heavy-4c93b30f.woff2");
+}
+@font-face{
+  font-family:A;
+  src:url("./a.woff2");
+}
+@font-face{
+  font-family:B;
+  src:url("./b.woff2");
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  color:#333333;
+  text-align:center;
+}
+body{
+  background-color:#d3d3d3;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:4rem;
+  padding-right:7rem;
+}
+.form{
+  height:40vmax;
+  width:31vmax;
+  background-color: white;
+  padding:1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  border-radius: 2rem;
+  padding-top:2.2vmax;
+}
+.form h1{
+  font-size: 1.9vmax;
+  text-align: center;
+  font-family: Medium;
+}
+.form h4{
+  font-size:1vmax;
+  margin-top:0.4vmax;
+  font-family:Bold;
+  margin-bottom: 1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:1.2rem;
+  justify-content: center;
+  align-items: center;
+  padding-left:3vmax;
+  padding-right:3vmax;
+  border-radius: 1rem;
+}
+.form2{
+  border-radius: 3rem;
+}
+.labels{
+  padding:0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  border:1px solid #333333;
+  height:3.3vmax;
+  width:19vmax;
+  text-align:start;
+  padding-left:1rem;
+  font-size: 1.1vmax;
+  font-weight: 600;
+  color:#333333;
+}
+.button{
+  background-color:#E60023;
+  padding:0.7rem 0.9rem;
+  border-radius: 1rem;
+  font-size: 1.1vmax;
+  color:white;
+  width:18vmax;
+  outline:none;
+  border:none;
+  font-weight: 800;
+}
+.image{
+  margin-bottom: 1rem;
+  width:3vmax;
+  height:3vmax;
+}
+.image img{
+  width:100%;
+  height:100%;
+}
+.p{
+  width:18vmax;
+  margin-bottom: 0.1rem;
+}
+form p{
+  text-align: center;
+  font-size:0.9vmax;
+  color:#80807e;
+  font-family: a;
+}
+form a{
+  font-weight:900;
+  text-decoration: underline;
+}
+.login{
+  margin-top:0.1rem;
+}
+.login a:hover{
+cursor: pointer;
+}
+.login p{
+  font-size:1vmax;
+}

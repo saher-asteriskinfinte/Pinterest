@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; padding:1.5rem;">
+        <div style="width:2.5rem;height:2rem;display: flex;gap:0.5rem;align-items: center;">
+            <img style="width:100%;height:100%;object-fit: cover;" src="/images/p.jpg" alt="">
+            <h3 style="font-family: Bold;font-size:1.2rem;">Pinterest</h3>
+        </div>
+        <div>
+            <a href="/profile" style="font-family:Bold ;text-decoration :none;color:black;margin-left:0.5rem;">Profile </a>
+            <a href="/feed" style="font-family:Bold ; text-decoration: none;color:black;margin-left:0.5rem;">Feed</a>
+            <a href="/logout" style="font-weight:200;font-family:Bold ; padding:0.8rem 1.5rem;background-color: #e60023;color:white;margin-left:0.5rem;text-decoration: none;border-radius: 1.2rem;">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <form id="uploadform" class="fileupload" action="/profileimage" method="post" enctype="multipart/form-data">
+            <input type="file" name="image">
+        </form>
+        <div class="profdetails">
+            <div class="profile-wrapper">
+  <span id="uploadicon" class="edit-icon">
+    <i class="ri-pencil-line"></i>
+  </span>
+
+  <div class="image">
+    <img src="/images/uploads/<%= user.profileImage %>" alt="">
+  </div>
+         </div>
+            <h1><%= user.fullname %></h1>
+            <h3>@<%= user.username %></h3>
+            <a href="/edit">Edit Profile</a>
+            <a href="/add" style="background-color: #e60023;color:whitesmoke;" class="newpost">Add New Post</a>
+        </div>
+        <div class="cards">
+           <% if (user.posts && user.posts.length > 0) { %>
+  <div class="cards2">
+    <div class="cards3">
+      <img src="/images/uploads/<%= user.posts[0].image %>" alt="">
+    </div>
+    <a class="cardstext" href="/show/posts" style="text-decoration: none;color:black;display:inline-block;margin-left:0.75rem;margin-top: 0.5rem;">Uploaded Pins</a>
+    <h5 class="cardstext1" style="margin-left:0.75rem;"><%= user.posts.length %> Pins</h5>
+  </div>
+<% } else { %>
+  <p>No Pins uploaded yet.</p>
+<% } %>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#uploadicon").addEventListener("click",()=>{
+        document.querySelector("#uploadform input").click();
+        document.querySelector("#uploadform input").addEventListener("change",()=>{
+            document.querySelector("#uploadform").submit();
+        })
+        })
+    </script>
+</body>
+</html>

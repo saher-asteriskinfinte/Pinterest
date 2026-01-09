@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/add.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; padding:1.5rem;">
+        <div style="width:2.5rem;height:2rem;display: flex;gap:0.5rem;align-items: center;">
+            <img style="width:100%;height:100%;object-fit: cover;" src="/images/p.jpg" alt="">
+            <h3 style="font-family: Bold;font-size:1.2rem;">Pinterest</h3>
+        </div>
+        <div>
+            <a href="/profile" style="font-family:Bold ;text-decoration :none;color:black;margin-left:0.5rem;">Profile </a>
+            <a href="" style="font-family:Bold ; text-decoration: none;color:black;margin-left:0.5rem;">Feed</a>
+            <a href="/logout" style="font-weight:200;font-family:Bold ; padding:0.8rem 1.5rem;background-color: #e60023;color:white;margin-left:0.5rem;text-decoration: none;border-radius: 1.2rem;">Logout</a>
+        </div>
+    </div>
+    <div style="padding:1rem;">
+<h2 style="font-family: Bold;">Create Pin</h2>
+<hr style="opacity: 50%;margin-top: 0.5rem;">
+<form action="/createpost" method="post" name="postimage" enctype="multipart/form-data">
+    <input style="margin-left:0.45rem;" type="file" name="image">
+    <input style="font-family:Regular ;display:block;margin-top:0.8rem;padding:0.75rem 4rem;background-color: whitesmoke;color:black;border:1px solid black;border-radius: 1.2rem;padding-left:1rem;padding-right:7rem; outline:none; " type="text" placeholder="Title" name="title">
+
+    <textarea style="font-family:Regular;width:19rem;height:15rem;margin-top:0.8rem;resize:none;padding:1rem;background-color: whitesmoke;color:black;border:1px solid black;border-radius: 1.2rem; outline:none; " type="text" placeholder="Description" name="description"></textarea>
+    
+    <input style="display: block;margin-top:0.8rem;" class="btn" type="submit" value="Create">
+</form>
+</div>
+</body>
+</html>

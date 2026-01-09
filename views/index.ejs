@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+<div class="main">
+  <div class="form">
+    <div class="image"><img src="./images/p.jpg" alt=""></div>
+    <h1>Welcome To Pinterest</h1>
+    <h4>Find new ideas to try</h4>
+    <form class="form2" action="/login" method="post">
+      <input class="labels" type="text" name="username" placeholder="Username">
+      <input class="labels" type="password" name="password" placeholder="Password">
+      <input  type="submit" class="button" value="Log in">
+      <div class="p"><p>By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our Privacy Policy. Notice at collection.</p></div>
+      <div class="login"><p>Not a member? <a href="/register">Sign up</a></p></div>
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

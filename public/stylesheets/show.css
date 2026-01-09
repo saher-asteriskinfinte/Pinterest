@@ -1,0 +1,33 @@
+@font-face{
+  font-family:Regular;
+  src:url("./Pin-Sans-MacOS-Regular-708c49dd.woff2");
+}
+@font-face{
+  font-family: Medium;
+  src:url("./Pin-Sans-MacOS-Medium-704a4f34.woff2");
+}
+@font-face{
+  font-family:Bold;
+  src:url("./Pin-Sans-MacOS-Bold-ce475d98.woff2");
+}
+@font-face{
+  font-family:Heavy;
+  src:url("./Pin-Sans-Heavy-4c93b30f.woff2");
+}
+@font-face{
+  font-family:A;
+  src:url("./a.woff2");
+}
+@font-face{
+  font-family:B;
+  src:url("./b.woff2");
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+h4{
+  font-family: Bold;
+}
