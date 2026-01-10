@@ -136,3 +136,98 @@
 .fileupload{
   display: none;
 }
+
+.nav1{
+  display: flex; 
+  justify-content: space-between; 
+  padding:1.5rem;align-items: 
+  center;
+}
+.nav1pinterest{
+  width:2.5rem;
+  height:2rem;
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
+}
+.nav1pin{ 
+  font-family: Bold;
+  font-size:1.2rem
+}
+.nav1prof , .nav1feed{
+  font-family:Bold ;
+  text-decoration :none;
+  color:black;
+  margin-left:0.5rem;
+}
+.nav1logout{
+  font-weight:200;
+  font-family:Bold ;
+   padding:0.8rem 1.5rem;
+   background-color: #e60023;
+   color:white;
+   margin-left:0.5rem;
+   text-decoration: none;
+   border-radius: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+.nav1pinterest{
+  width:2.2rem;
+  height:1.9rem;
+  gap:0.4rem;
+}
+.nav1pin{ 
+  font-family: Bold;
+  font-size:1.1rem;
+}
+.nav1prof , .nav1feed{
+  margin-left:0.4rem;
+}
+.nav1logout{
+   padding:0.6rem 1.3rem;
+   margin-left:0.4rem;
+}
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .nav1pinterest{
+  width:2rem;
+  height:1.65rem;
+  gap:0.3rem;
+}
+.nav1pin{ 
+  font-family: Bold;
+  font-size:1rem;
+}
+.nav1prof , .nav1feed{
+  margin-left:0.25rem;
+  font-size: 0.75rem;
+}
+.nav1logout{
+   padding:0.4rem 1rem;
+   margin-left:0.25rem;
+   font-size: 0.75rem;
+}
+.profdetails a{
+    font-size:1.35vmax;
+    margin-top: 1.3vmax;
+    padding:0.75rem 1rem;
+}
+.cards3{
+  width:14rem;
+  height:9rem;
+}
+
+.image{
+    height:11.5vmax;
+    width:11.5vmax;
+}
+.profdetails h1{
+    font-size:2.2vmax;
+}
+.profdetails h3{
+    font-size:1.3vmax;
+}
+}

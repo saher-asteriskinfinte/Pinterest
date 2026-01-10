@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const passport = require("passport");
-const userModel = require("./users");
+const userModel = require("./user");
 const postModel = require("./post");
 const localStrategy = require("passport-local");
 const upload = require("./multer");
@@ -21,6 +21,9 @@ router.get("/feed",isLoggedIn,async(req,res)=>{
 const user = await userModel.findOne({username:req.session.passport.user});
 const posts = await postModel.find()
 .populate("user");
+posts.forEach(p => {
+  console.log("posts:",p.title,"user:",p.user);
+});
 res.render("feed",{user,posts});
 })
 
